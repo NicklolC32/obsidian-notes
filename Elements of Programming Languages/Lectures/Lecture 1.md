@@ -24,3 +24,6 @@ Terminals/Tokens - TIMES , PLUS , ->
  ::= consists of
 
 **Abstract Syntax Trees**
+- BNF grammar defines a collection of syntax trees
+![[Pasted image 20260928114823.png]]
+
