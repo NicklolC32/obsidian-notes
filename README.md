@@ -1,3 +1,3 @@
 # obsidian-notes
 
-a cool edit
+This Obsidian vault is primarily being used for my university Computer Science notes. I have sectioned them into my separate modules which have been further sectioned into subsections for lectures, tutorials, and their course structure. The notes are in my own words using resources such as the lecture slides and other students' notes. Pasting lecture slides into my notes and writing over them was not effective for me from the past few years, as I was not taking content into my own words so content from the actual lectures can be found on Learn. Also, images that have been copied and pasted into my notes have a separate folder for them for organisation. 
