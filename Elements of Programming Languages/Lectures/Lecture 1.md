@@ -165,3 +165,31 @@ def size (e: Expr): Int = e match {
 - 1 + 2 * 3 ---> (+ 1 (* 2 3))
 - (1 + 2) * 3 ---> (* (+ 1 2) 3)
 
+#### Reasoning Techniques
+- **Mathematical induction** - occurs over set of Natural numbers
+- **Structural induction** - occurs over ASTs
+- **Rule induction** - occurs over derivations
+
+#### Mathematical Induction
+- base case n holds
+- for any n e N, if P(n) holds, then P(n+1) also holds
+- therefore, P(n) holds for all n e N
+
+^ can adapt a similar process to expressions and ASTs
+#### Induction over Expressions
+Remember, an ASTs is built up from a primitive node, or from 2 smaller expressions into 1 larger expression
+
+![[Pasted image 20260928173410.png]]
+
+Essentially saying that if all leaf nodes are valid, and if the subtrees of 2 expressions and the addition are valid, and if the subtrees of 2 expressions and the multiplication are valid, then the property P with any expression is valid with all expressions.
+
+
+> [!NOTE] Induction Proof Using Size
+> If we want to prove Q(n) holds for all n by using induction on n:
+> - the base case n = 0 is vacuous
+> - for n+1, then assume Q(n) holds and consider any e with size(e)<n+1. Consider the 3 cases:
+> 	- if e = m e N, then P(e) holds by part 1 of expression induction principle (refer to the figure above)
+> 	- if e = e1 + e2 then size(e1) < size(e) <= n and similarly, size(e2) < size(e) <= n. So, by induction P(e1) and P(e2) hold and by part 2 of expression induction principle, P(e) holds
+> 	- if e = e1 * e2, the same reasoning applies
+
+
