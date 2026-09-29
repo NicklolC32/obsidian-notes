@@ -4,7 +4,7 @@ topic: Networking Principles
 tags:
 
 ---
-Packet Switching
+# Packet Switching
 - data is split into packets then transported *independently* over network
 - handled in a ==*best efforts*== manner
 - can follow same or different routes to get to endpoint
@@ -18,7 +18,7 @@ Packet Switching
    Figure 1: Packet *p* abstract example
 
 ---
-Layers
+### Layers
 - upper layers depend on bottom layers to work
 - all layers above the bottom-most layer are virtual (abstract)
 - bottom layer = physical
@@ -29,11 +29,12 @@ Fragmentation can occur at every layer.
 
 > [!NOTE] Internet Stack
 > > - packets just need to know where to go
+> > - packets follow a pattern of up, down, across when sent across internet
 > > - the principle of layers is applied, where the layer itself knows what to do but doesn't know what lower layers do, just relies on them
 > 
 
 ---
-Encapsulation
+### Encapsulation
 - when a packet *p* from protocol *p* is wrapped into another packet *q* from protocol *q*
 - contents stay in payload
 
@@ -45,7 +46,7 @@ Encapsulation
                        Figure 3: Encapsulation across layers
 
 ---
-**Local Area Networks**
+### **Local Area Networks**
 Network Interfaces - device connecting another device to a network. E.g. Ethernet, Wi-Fi adapter, DSL modem
 
 MAC Address - each network interface has unique pre-defined 48-bit number to define its address.
@@ -60,14 +61,14 @@ Hub - sends data to all devices without learning the MACs.
 > frames - encapsulates packets and transports at the ==Data Link layer==
 
 ==Protocols== are a standardised set of rules defining how to format and process data on a network.
-**Internet Protocol**
+### **Internet Protocol**
 Deals with:
 1. Addressing
 2. Routing 
 3. Fragmentation + Reassembly
 4. Data Encapsulation + Packaging (encapsulates TCP or UDP packets into specific form)
 
-**IP Addresses and Packets**
+### **IP Addresses and Packets**
 - unique
 - subdivided into network, subnet, host (octets)
 - specific prefixes that have special functions, e.g. broadcast addresses end in .255
@@ -78,7 +79,7 @@ Deals with:
 > TTL (time to live) - is a counter for the data packet which decrements at every hop when it is travelling. Prevents packet from being transported forever.
 
 
-**IP Routing**
+### **IP Routing**
 Works at ==Network Layer==
 Connects multiple networks together
 Maintain tables to keep track of LAN addresses or gateway routers
@@ -90,7 +91,7 @@ Used for network testing and debugging
 Traceroute
 Helps to understand way traffic flows
 
-**Network Attacks**
+### **Network Attacks**
 ==Standard==: data is sent from source to destination
 ==Denial of Service (DoS)==: data is stopped during traffic so it doesn't reach destination
 ==Wiretapping (sniffing)==: data is sent to both destination and attacker
