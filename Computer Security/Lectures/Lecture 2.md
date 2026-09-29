@@ -67,9 +67,16 @@ Deals with:
 3. Fragmentation + Reassembly
 4. Data Encapsulation + Packaging (encapsulates TCP or UDP packets into specific form)
 
-IP Addresses and Packets
-Unique and are subdivided into network, subnet, host (octets)
-Specific prefixes that have specific functions, e.g. broadcast addresses end in .255
+**IP Addresses and Packets**
+- unique
+- subdivided into network, subnet, host (octets)
+- specific prefixes that have special functions, e.g. broadcast addresses end in .255
+- private networks not routed outside of a LAN
+- IP header contains source + destination as destination machine only cares about these
+
+> [!NOTE] Terminology
+> TTL (time to live) - is a counter for the data packet which decrements at every hop when it is travelling. Prevents packet from being transported forever.
+
 
 **IP Routing**
 Works at ==Network Layer==
