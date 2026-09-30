@@ -74,22 +74,25 @@ Deals with:
 - specific prefixes that have special functions, e.g. broadcast addresses end in .255
 - private networks not routed outside of a LAN
 - IP header contains source + destination as destination machine only cares about these
+![[Pasted image 20260930111806.png]]
 
 > [!NOTE] Terminology
-> TTL (time to live) - is a counter for the data packet which decrements at every hop when it is travelling. Prevents packet from being transported forever.
-
+> **TTL** (time to live) - is a counter for the data packet which decrements at every hop when it is travelling. Prevents packet from being transported forever. Max is usually 225
+> **prot** - protocol
 
 ### **IP Routing**
-Works at ==Network Layer==
-Connects multiple networks together
-Maintain tables to keep track of LAN addresses or gateway routers
+- works at ==Network Layer==
+- a *router* bridges multiple networks
+- only looks at destination address (not source)
+- maintains tables to forward packets to appropriate network - keeps track of LAN addresses or gateway routers
+	- if it can't find the destination in the table, it will have *default route* to send the packets
+![[Pasted image 20260930112009.png]]
 
-Internet Control Message Protocol (ICMP)
-Network Layer Protocol
-Used for network testing and debugging
-
-Traceroute
-Helps to understand way traffic flows
+**Internet Control Message Protocol (ICMP)** report errors and provides info on network communication problems (tests + debugs)
+- works at the ==network layer==
+- there are several methods of exploring a network (can be used before an attack too)
+	- **ping** - sends echo requests messages and finds statistics on *round trip times* and *packet loss*
+	- **traceroute** - sends ICMP messages with increasing TTL to discover routes
 
 ### **Network Attacks**
 ==Standard==: data is sent from source to destination
@@ -101,3 +104,8 @@ Helps to understand way traffic flows
 
 ![[Pasted image 20260923194326.png]] 
                 Figure 4: 5 types of network attacks
+
+### Wireshark
+- captures everything happening in the network its computer is connected to, and saves it
+- can write protocol parsers - decodes messages being sent
+- analyses traffic
