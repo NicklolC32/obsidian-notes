@@ -106,6 +106,6 @@ Deals with:
                 Figure 4: 5 types of network attacks
 
 ### Wireshark
-- captures everything happening in the network its computer is connected to, and saves it
+- captures everything happening in the network it's computer is connected to, and saves it
 - can write protocol parsers - decodes messages being sent
-- analyses traffic
+- analyses traffic 

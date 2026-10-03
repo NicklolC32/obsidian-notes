@@ -37,7 +37,7 @@ To solve the issue, you can make sure ARP cache stores only *static entries* (en
 ### **Internet Protocol**
 #### LAN to Internet
 *Routers* - act as a gateway for machines communicating from a private LAN network to the internet. The IP address from the private network gets dropped at the router then forwards the packets to the internet.
-![[Pasted image 20260930233304.png]]
+![[Pasted image 20260930233304.png|531]]
 
 #### IP Vulnerabilities
 - unencrypted transmission
@@ -46,5 +46,58 @@ To solve the issue, you can make sure ARP cache stores only *static entries* (en
 - no bandwidth constraints
 	- MANY packets can be injected -> network to launch **Denial-of-Service Attack**
 
+---
+### **Transport Layer**
 #### User Datagram Protocol (UDP)
-- ==transport== layer
+- *stateless* and unreliable **datagram protocol**
+- doesn't provide delivery guarantees, but is efficient
+- can distinguish data for multiple concurrent applications on a single host
+- applications using UDP must be willing to accept a fair amount of corrupt + lost data
+	- many applications use UDP because humans are good at filling in the gaps
+	- e.g. voice calls have grainy noise (lost sound) but we can still understand
+
+#### Transmission Control Protocol
+- reliable and ***ordered*** deliveries (cares about sequence)
+- can distinguish **multiple applications** on same host
+- *stateful*: keeps track of states (interactions)
+	- marks each packet with **sequence number**
+	- sends ACK (acknowledgement) to indicate successful received packet
+- uses *checksum* in the header to check data
+![[Pasted image 20260930235202.png|547]]
+					Figure: TCP Packet Format
+#### Ports
+- remember, TCP and UDP supports concurrent applications on same server
+- are 16-bit numbers
+- there are *source* and *destination* ports
+- certain port numbers are reserved for known protocols, and are usually standard
+
+#### TCP Data Transfer
+- before data transmission between client and server can be confirmed, a three-way handshake must be done
+	- *initial sequence numbers* (SYN) are exchanged then a bunch of ACKs are checked to make sure data is ok (SYN/ACK)
+	- the *checksum* is also checked (within packet)
+
+#### Establishing TCP Connections
+- established using *3-way handshake*
+- client requests connection: sends out SYN packet
+- server responds with SYN/ACK packet, acknowledging connection
+- client responds with an ACK, establishing connection
+![[Pasted image 20261001124116.png|700]]
+
+#### SYN Flooding
+ - the attacker continuously sends SYN packets to victim, ignoring SYN-ACKs so victim is stuck waiting and their state table runs out of space
+ - **effective** against smaller targets
+ - **however** attacker's IP can be traced and attacker's bandwidth is unlikely to be comparable to a server's
+
+#### Spoofing: Forged TCP Packets
+- same as SYN flooding except the source of the TCP packet has been **forged**
+- **effective** because harder to trace and ACKs are actually sent to the computer with the forged address lol
+- **however** packets with source addresses outside the victim's origin network will be dropped
+
+---
+### **Smurfing**
+- exploits ==ICMP== (internet control message protocol) *pings* request, whereby servers/computers respond, to echo packets, to say they are online
+- a **broadcast address** sends packets to ALL the machines on a network, so if a ping is sent to this, the echo back would be sent from all the machines connected to that network
+	- called a "Smurf amplifier"
+	- attacker amplified the amount of bandwidth they had
+- the source IP address will be the victim's
+- this is a "reflection" attack
