@@ -1,7 +1,7 @@
 date: 30-09-2026
 time: 10:00
-topic: Firewalls, NAT, and Intrusion De
-tags:
+topic: Firewalls, NAT, and Intrusion Detection Systems
+tags: #firewalls #networkaddresstranslation #intrusiondetectionsystems
 
 # Firewalls
 
@@ -57,3 +57,25 @@ For example:
 - therefore, it is important to have a firewall but must be combined with other security measures
 
 # Network Address Translation (NAT)
+
+- internal IPv4 addresses are different to external IP addresses
+- there are less than 4.3 billion IPv4 addresses available than there are the number of devices in the world
+- NAT fixes this problem by using *border routers* between their own IP and the internal ones 
+	- essentially, the internal devices have their own IPs but when they need to communicate with external networks, they use the border router's IP address instead
+	- communication to the correct device is achieved by using **unique port numbers within each network** (you need to register this number with the router)
+![[Pasted image 20261005153936.png|562]]
+^ Example of NAT usage. When traffic leaves a network, **from** details are changed, when traffic arrives at a network, **to** details are changed.
+
+
+> [!NOTE] Wi-Fi Security Cameras
+> Have the ability to see what is happening in your private network traffic from anywhere. However, it isn't very secure as usually default usernames and passwords are set when using this device and anyone could access this on the Internet.
+
+# Intrusion Detection Systems (IDS)
+
+- firewalls are preventative, whereas IDS detect potential incidents in progress, so you can quickly address it
+- e.g. most incidents are caused by users letting something malicious into the network or an insider being the malicious user. These cannot be prevented so IDS helps to deal with these situations quickly
+
+#### Rule-Based Intrusion Detection
+- rules identify the types of actions that match certain known intrusion attacks
+- a signature is applied to a known attack
+- high accuracy, low false positives
