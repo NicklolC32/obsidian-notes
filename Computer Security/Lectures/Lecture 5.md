@@ -78,4 +78,11 @@ For example:
 #### Rule-Based Intrusion Detection
 - rules identify the types of actions that match certain known intrusion attacks
 - a signature is applied to a known attack
-- high accuracy, low false positives
+	- a new attack will not be spotted because admin has not encoded it into its rules
+	- so dependent on admin
+- high accuracy, low false positives (but high false negatives depending on admin)
+
+#### Statistical Intrusion Detection
+- dynamic model which learns what behaviour is acceptable and 'normal', but flags anything that does not match
+	- system needs time to learn new behaviour
+- higher false positives, lower accuracy

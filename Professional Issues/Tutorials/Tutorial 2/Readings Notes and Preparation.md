@@ -59,3 +59,8 @@ Prompt:
 - some people may not be aware that their data is even accessible for everyone and may feel like their privacy has been exploited
 
 - on the other hand, big data can also be used in positive ways, for example, improving people's experiences on online platforms, developing devices or platforms which are useful for others, improving accuracy for certain 
+
+#### Discussion
+positives: can show how you can improve and stop this happening in future
+
+social impact: more people might keep their lives private, less people voting
