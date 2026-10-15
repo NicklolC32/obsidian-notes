@@ -5,3 +5,10 @@ paragraph structure: topic sentence (state your point), evidence (and cite), exp
 - cite statements that aren't my facts/opinions
 - reference everyone in reference list (and use consistent style)
 - use sources outside of university material
+
+### Cambridge Analytica
+Big Data
+Transparency
+Micro-targeting
+
+#### Mock Debate
