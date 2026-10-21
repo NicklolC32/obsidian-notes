@@ -11,6 +11,6 @@
 - there are still many errors in the AI, yet so many people rely on it
 	- people can be misled if AI provides wrong answers, and this can rlly pose as a risk once people start using it for more serious things
 	- teenage son was encouraged to commit suicide after hours of using a chatbot of a Game of Thrones character https://www.bbc.co.uk/news/articles/ce3xgwyywe4o
-	- Ukrainian woman was dicusssing suicidal thoughts with ChatGPT and asked it to write her suicide note as well as places to kill herself. ai was also attempting to diagnose her
+	- Ukrainian woman was dicusssing suicidal thoughts with ChatGPT and asked it to write her suicide note as well as places to kill herself. ai was also attempting to diagnose her https://www.bbc.co.uk/news/articles/cp3x71pv1qno
 
 **idiosyncratic**
