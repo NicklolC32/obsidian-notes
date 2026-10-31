@@ -42,3 +42,22 @@ public class Demo{
 An even more shorthand way for lambdas
 ![[Pasted image 20261015165436.png|563]]
 - no parameters so no brackets
+
+# Optionals<\T>
+- helps to catch exceptions and prevent runtime exceptions
+	- compile time exceptions are better than runtime ones for ur programs
+
+```
+public Optional<Order> findbyId(String orderId) {
+	return Optional.ofNullable(orderById.get(orderId));  // of(..) method also exists but will throw an exception if .. is null
+}
+
+Order order = repository.findById("1111-1111")
+	.orElseThrow(() -> new IllegalArgumentException("Order not found"));  // custom error handling
+System.out.println(order.getCustomer());  // will never result in NullPointerException
+```
+- the findById method uses Optional's static method .ofNullable() so that the risk of receiving a Null Exception is there
+- if Null happens it will be caught and custom exception message will be displayed instead
+- client will then have to handle the Null order
+
+**32:58 lecture**

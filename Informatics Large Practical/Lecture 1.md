@@ -76,6 +76,6 @@ public enum OrderStatus {
 ### Exception Handling: Checked vs Unchecked, Try/Catch/Finally, Custom Exceptions
 - *checked* and *unchecked* exceptions will deter whether the compiler needs to handle or declare the issue
 - *checked* - compiler checks at compile time and generally represent conditions that a program may need to recover from e.g. file/database errors
-- *unchecked* - occur at runtime and do not need to be handled/declared
+- *unchecked* - occur at runtime and do not need to be handled/declared e.g. invalid index position of a list
 - *try/catch/finally* blocks catch a specific error and the *finally* part will always run no matter if there was an error or not
 - *custom exceptions* are specifically for your domain e.g. an "OrderNotFoundException"

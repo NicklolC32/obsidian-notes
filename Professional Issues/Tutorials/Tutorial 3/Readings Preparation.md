@@ -14,3 +14,4 @@
 	- Ukrainian woman was dicusssing suicidal thoughts with ChatGPT and asked it to write her suicide note as well as places to kill herself. ai was also attempting to diagnose her https://www.bbc.co.uk/news/articles/cp3x71pv1qno
 
 **idiosyncratic**
+**enshitification**
