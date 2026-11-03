@@ -7,6 +7,13 @@
 	- undermines and questions credibility and validity
 	- conflicts with ACM: 1.3 Be honest and trustworthy
 
+- to relate to a wider social issue: **responsibility: accountable for the report**
+	- as the data analyst, I have responsibility to use the data accordingly and to write a report that accurately represents the living conditions of students in Edinburgh
+	- i didn't have resp over the survey questions, so phrasing of the ques could have impacted the outcome of the report but if i am aware of this and didn't do anything then am i avoiding responsibility ? idk 
+	- I also have power - I can make a difference to the outcome by visualising the data a certain way since I have the capacity to do this as the data analyst
+	- **shared responsibility** - Housing Crisis is a larger societal issue and requires engagement from everyone, my resp in this instance plays a small role in proportion to the larger, longer-term solution
+	- my research could lead to a change with a variable cost, landlords could be caught in the crossfire or nothing could happen
+
 > [!NOTE] Terminology
 > *Acquiescence bias* - is the tendancy for ppts to say "yes" to questions or to agree rather than disagree. Shows up in binary response format questions. These formats can **subtly encourage agreement, even when the ppt doesn't feel strongly or doesn't fully understand the question**.
 >
@@ -28,8 +35,6 @@ found web-based format is more effective espe for one of their surveys evaluatin
 	- **no guaranteed of full anonymity** therefore when using written answers, must properly hide details that could expose identity
 
 2) *response bias 2*: Social desirability bias - “to stretch the truth in an effort to make a good impression” ([Martin & Nagao, 1989, p. 72](https://www.sciencedirect.com/science/article/pii/S0747563204001785?via%3Dihub#bib20))
-
-~~social impact: landlords could be students who need extra money. This report targets the Edinburgh council as well as landlords, could this negatively affect Edinburgh's landlords' careers? Cost of Living crisis in Edinburgh is also part of the question - what if a landlord needs the money in order to live?~~ bad point to make because after doing some extensive research, I have realised that landlords are NOT the victims..
 
 Vocab:
 Encompasses
