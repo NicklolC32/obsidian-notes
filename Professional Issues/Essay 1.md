@@ -14,6 +14,13 @@
 	- **shared responsibility** - Housing Crisis is a larger societal issue and requires engagement from everyone, my resp in this instance plays a small role in proportion to the larger, longer-term solution
 	- my research could lead to a change with a variable cost, landlords could be caught in the crossfire or nothing could happen
 
+- **bias** - failing to reflect more true values for some groups than others
+- as the data analyst it is my responsibility to be aware of the potential biases to ensure they don't end up becoming encoded into the report
+	- bias could be present in the data i use or bias could be a result of the system i end up deploying to the world
+- bias can come from design choices of the technical system, consciously, subconsciously, or accidentally
+- bias can come from my dataset - maybe one particular group is more represented than another group eg students from Uni of Edi primarily but the report discusses all students across Edi, and maybe students from Heriot Watt would feel misrepresented
+- defining measures for **group fairness** can be challenging - involves making decisions about how the world should be divided up that reflect the preference of the designers
+
 > [!NOTE] Terminology
 > *Acquiescence bias* - is the tendancy for ppts to say "yes" to questions or to agree rather than disagree. Shows up in binary response format questions. These formats can **subtly encourage agreement, even when the ppt doesn't feel strongly or doesn't fully understand the question**.
 >
