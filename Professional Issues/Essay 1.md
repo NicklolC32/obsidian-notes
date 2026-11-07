@@ -7,7 +7,7 @@
 	- undermines and questions credibility and validity
 	- conflicts with ACM: 1.3 Be honest and trustworthy
 
-- to relate to a wider social issue: **responsibility: accountable for the report**
+- to relate to a wider social issue: **responsibility: accountable for the report** (CAN BE A THIRD PARAGRAPH TALKING ABOUT RESPONSIBILITY and how i could have responsibility to bring up the issue to authoritative figures or figures in government)
 	- as the data analyst, I have responsibility to use the data accordingly and to write a report that accurately represents the living conditions of students in Edinburgh
 	- i didn't have resp over the survey questions, so phrasing of the ques could have impacted the outcome of the report but if i am aware of this and didn't do anything then am i avoiding responsibility ? idk 
 	- I also have power - I can make a difference to the outcome by visualising the data a certain way since I have the capacity to do this as the data analyst
